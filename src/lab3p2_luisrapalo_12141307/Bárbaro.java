@@ -1,14 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package lab3p2_luisrapalo_12141307;
+public class Bárbaro extends Personajes{
+    private String arma;
+    private int xp;
 
-/**
- *
- * @author luisr
- */
-public class Bárbaro {
+    public Bárbaro() {
+    }
+
+    public Bárbaro(String arma, int xp) {
+        this.arma = arma;
+        this.xp = xp;
+    }
+
+    public Bárbaro(String arma, int xp, String nombre, String raza, double estatura, double peso, int años, String descripcion, String nacion, String tipop, int HP, int CS, int AC) {
+        super(nombre, raza, estatura, peso, años, descripcion, nacion, tipop, HP, CS, AC);
+        this.arma = arma;
+        this.xp = xp;
+    }
+
     
 }

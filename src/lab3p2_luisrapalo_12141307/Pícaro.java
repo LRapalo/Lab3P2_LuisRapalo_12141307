@@ -1,14 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package lab3p2_luisrapalo_12141307;
+public class Pícaro extends Personajes{
+    private String instrumento;
+    private int robos;
 
-/**
- *
- * @author luisr
- */
-public class Pícaro {
+    public Pícaro() {
+    }
+
+    public Pícaro(String instrumento, int robos) {
+        this.instrumento = instrumento;
+        this.robos = robos;
+    }
+
+    public Pícaro(String instrumento, int robos, String nombre, String raza, double estatura, double peso, int años, String descripcion, String nacion, String tipop, int HP, int CS, int AC) {
+        super(nombre, raza, estatura, peso, años, descripcion, nacion, tipop, HP, CS, AC);
+        this.instrumento = instrumento;
+        this.robos = robos;
+    }
+
     
 }
