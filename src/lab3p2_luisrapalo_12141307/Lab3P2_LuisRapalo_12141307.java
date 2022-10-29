@@ -305,7 +305,9 @@ public class Lab3P2_LuisRapalo_12141307 {
                 }
                 break;
                 case 3: {
-                    
+                    for (Personajes t : p) {
+                        t.toString();
+                    }
                 }
                 break;
                 case 4: {
