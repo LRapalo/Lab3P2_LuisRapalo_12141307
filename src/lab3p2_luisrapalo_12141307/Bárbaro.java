@@ -17,5 +17,26 @@ public class Bárbaro extends Personajes{
         this.xp = xp;
     }
 
+    public String getArma() {
+        return arma;
+    }
+
+    public void setArma(String arma) {
+        this.arma = arma;
+    }
+
+    public int getXp() {
+        return xp;
+    }
+
+    public void setXp(int xp) {
+        this.xp = xp;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "B\u00e1rbaro{" + "arma=" + arma + ", xp=" + xp + '}';
+    }
+
     
 }

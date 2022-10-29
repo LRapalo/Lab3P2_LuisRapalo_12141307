@@ -17,5 +17,26 @@ public class Pícaro extends Personajes{
         this.robos = robos;
     }
 
+    public String getInstrumento() {
+        return instrumento;
+    }
+
+    public void setInstrumento(String instrumento) {
+        this.instrumento = instrumento;
+    }
+
+    public int getRobos() {
+        return robos;
+    }
+
+    public void setRobos(int robos) {
+        this.robos = robos;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "P\u00edcaro{" + "instrumento=" + instrumento + ", robos=" + robos + '}';
+    }
+
     
 }

@@ -16,5 +16,26 @@ public class Clérigo extends Personajes{
         this.tipoinvo = tipoinvo;
     }
 
+    public String getCreencia() {
+        return creencia;
+    }
+
+    public void setCreencia(String creencia) {
+        this.creencia = creencia;
+    }
+
+    public String getTipoinvo() {
+        return tipoinvo;
+    }
+
+    public void setTipoinvo(String tipoinvo) {
+        this.tipoinvo = tipoinvo;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "Cl\u00e9rigo{" + "creencia=" + creencia + ", tipoinvo=" + tipoinvo + '}';
+    }
+
     
 }

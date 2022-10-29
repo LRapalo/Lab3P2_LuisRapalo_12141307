@@ -11,6 +11,11 @@ public class Lab3P2_LuisRapalo_12141307 {
         // TODO code application logic here
         boolean Centinela = true;
         ArrayList<Personajes> p = new ArrayList();
+        p.add(new Clérigo("Dios", "Bueno", "Mati", "Elfo", 2.20, 48.4, 23, "Heroe", "Norfair", "Lead", 70, 97, 40));
+        p.add(new Bárbaro("Ligera", 30, "Carlos", "Mediano", 1.50, 30.2, 19, "Loco", "Brinstar", "Offensive", 60, 93, 65));
+        p.add(new Mago("Magia Blanca", "Hector", "Humano", 1.78, 38.5, 19, "Killer", "Crateria", "Support", 70, 101, 20));
+        p.add(new Pícaro("Piedra Antigua", 8, "Nuila", "Enano", 1.90, 41.8, 23, "Master", "Zebes", "Tank", 65, 80, 50));
+        
         
         while (Centinela == true){
             System.out.println("----MENU----\n"
@@ -121,23 +126,48 @@ public class Lab3P2_LuisRapalo_12141307 {
                     
                     switch (opciont){
                         case 1: {
-                            tipop = "Lead";
+                            if (opcionp == 1 && opcionp == 2){
+                                tipop = "Lead";
+                            }
+                            else {
+                                System.out.println("Tu personaje no puede tener este tipo");
+                            }
                         }
                         break;
                         case 2: {
-                            tipop = "Support";
+                            if (opcionp == 2 && opcionp == 3){
+                                tipop = "Support";
+                            }
+                            else {
+                                System.out.println("Tu personaje no puede tener este tipo");
+                            }
                         }
                         break;
                         case 3: {
-                            tipop = "Offensive";
+                            if (opcionp == 2){
+                                tipop = "Offensive";
+                            }
+                            else {
+                                System.out.println("Tu personaje no puede tener este tipo");
+                            }
                         }
                         break;
                         case 4: {
-                            tipop = "Spammer";
+                            if (opcionp == 4){
+                                tipop = "Spammer";
+                            }
+                            else {
+                                System.out.println("Tu personaje no puede tener este tipo");
+                            }
                         }
                         break;
                         case 5: {
-                            tipop = "Tank";
+                            if (opcionp == 3 && opcionp == 4){
+                                tipop = "Tank";
+                            }
+                            else {
+                                System.out.println("Tu personaje no puede tener este tipo");
+                            }
                         }
                         break;
                         
@@ -279,7 +309,12 @@ public class Lab3P2_LuisRapalo_12141307 {
                 }
                 break;
                 case 4: {
+                    System.out.println("Ingrese la posicion del personaje que desea eliminar");
+                    int pos = lea.nextInt();
                     
+                    if (pos < p.size() -1){
+                        p.remove(pos);
+                    }
                 }
                 break;
                 case 5: {

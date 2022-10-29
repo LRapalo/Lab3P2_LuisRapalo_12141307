@@ -14,5 +14,18 @@ public class Mago extends Personajes{
         this.magia = magia;
     }
 
+    public String getMagia() {
+        return magia;
+    }
+
+    public void setMagia(String magia) {
+        this.magia = magia;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "Mago{" + "magia=" + magia + '}';
+    }
+
     
 }
